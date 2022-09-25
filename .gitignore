@@ -1,2 +1,5 @@
 *.agdai
 MAlonzo/**
+/.vs/Net.Filter.Demo
+/Net6.Filter.Demo/bin/Debug/net6.0
+/Net6.Filter.Demo/obj
