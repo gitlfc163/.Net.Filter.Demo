@@ -8,7 +8,7 @@ namespace Net6.Filter.Demo.Filters;
 /// <summary>
 /// WeatherForecast的 Action Filter
 /// </summary>
-public class WeatherForecastActionFilterAttribute:ActionFilterAttribute
+public class CustomerActionFilterAttribute:ActionFilterAttribute
 {
     /// <summary>
     /// Action方法调用之前执行

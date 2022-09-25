@@ -19,9 +19,13 @@ public class FilterDemoController : AreaController
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    [WeatherForecastActionFilter(Order =1)]
+    //[CustomerActionFilter(Order =1)]
+    //[CustomerAuthorizationFilter]
+    //[CustomerResourceFilter]
+    [CustomerExceptionFilter]
     public IEnumerable<WeatherForecast> Get()
     {
+        Console.WriteLine("GetWeatherForecast¿ªÊ¼");
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),
